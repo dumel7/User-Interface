@@ -1,0 +1,77 @@
+body{
+	width:700px;
+	margin: 0 auto;
+	background-color:#efefef;
+}
+#navPanel{
+	width: 700px;
+	height: 100px;
+	background-color: #dedede;
+	border-radius: 10px;
+	margin-top: 50px;
+}
+#logo{
+	width: 150px;
+	height: 100px;
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+}
+#logoIcon{
+	margin-top:25px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 35px;
+	margin-button: 0px;
+}
+h3.logo{
+	margin: 10px;
+	font-size: 20px;
+}
+.menuContainer{
+	height: 100px;
+	width: 546px;
+	float: right;
+}
+.menu{
+	list-style-type:none;
+	font-size: 24px;
+	text-align: right;
+	margin: 33px;
+}
+.menu >li{
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.personInfo{
+	margin-top: 50px;
+	height: 500px;
+	weith: 700px;
+	border-top-style: solid;
+}
+.headerBox{
+	width: 250px;
+	height: 300px;
+	display:inline-block;
+}
+.boxContainer{
+	width: 446px;
+	float: right;
+}
+.box{
+	background-color: red;
+	display: inline-block;
+	width: 200px;
+	height: 60px;
+	border-color:#efefef;
+	border-bottom: solid;
+}
+select.language{
+	margin: 0px;
+	padding: 0px;
+	background-color: #dedede;
+	width: 175px;
+	border-radius: 15px;
+	padding: 5px;
+}
