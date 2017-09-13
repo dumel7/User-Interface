@@ -46,31 +46,34 @@ h3.logo{
 }
 .personInfo{
 	margin-top: 50px;
-	height: 500px;
+	height: 250px;
 	weith: 700px;
 	border-top-style: solid;
+	background-color: #dedede;
 }
 .headerBox{
 	width: 250px;
-	height: 300px;
-	display:inline-block;
+	display: inline-block;
 }
 .boxContainer{
 	width: 446px;
 	float: right;
 }
 .box{
-	background-color: red;
 	display: inline-block;
 	width: 200px;
 	height: 60px;
 	border-color:#efefef;
 	border-bottom: solid;
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding-top: 5px;
 }
 select.language{
 	margin: 0px;
 	padding: 0px;
-	background-color: #dedede;
+	background-color: white;
 	width: 175px;
 	border-radius: 15px;
 	padding: 5px;
