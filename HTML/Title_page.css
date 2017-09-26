@@ -1,7 +1,7 @@
 .middle1
 {
 	display: inline-block;
-	
+	float: left;
 }
 
 #selectfile

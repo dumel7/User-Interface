@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<meta charset="utf-8" />
 <title>First excercise</title>
 <link rel="stylesheet" href="Main_styles.css" type="text/css"/>
 <link rel="stylesheet" href="Title_page.css" type="text/css"/>
@@ -12,43 +13,44 @@
 <body style=" font-family: 'Lato', sans-serif;">
 
 <div class = "container">
-<header>
 
+<header>
 		<div class="header">
-			<div id = "mainLogo"> <img id="main_logo" src = "img/netflix-logo.png" > 
+			<div id = "mainLogo"> <img id="main_logo" alt="Logo" src = "img/netflix-logo.png" >
 				<div id = "pageTitle">My account</div>
 			</div>
 
 				<div class = "link col-2 col-m-12"> <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">link 1</a> </div>
 				<div class = "link col-2 col-m-12"> <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">link 2</a> </div>
-				<div class = "link col-2 col-m-12"; style="border-right:none;";> <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">link 3</a> </div>
+				<div class = "link col-2 col-m-12" style="border-right:none;"> <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">link 3</a> </div>
 		</div>
 		<div style="clear:both"></div>
 </header>
-<main>
-		<div class="middle  col-12 col-m-12">
+
+		<div class="middle col-12 col-m-12">
 			<header>
-				<div class="col-4 col-m-12">
+				<div class="col-3 col-m-12">
 					<div class="title">
 						PERSONAL INFORMATION
 					</div>
 				</div>
 			</header>
+
 			<form action="/action_page.php">
-				<div class="middle1 col-4 col-m-6">
+				<div class="middle1 col-5 col-m-6">
 					<div class="box">
-						<input class ="forms"; placeholder="First and last name" ;style ="type:text; " onfocus="this.placeholder=''" onblur="this.placeholder='First and last name'">
+						<input class ="form" placeholder="First and last name" style ="type:text;" onfocus="this.placeholder=''" onblur="this.placeholder='First and last name'">
 					</div>
 					<div class="box">
-						<input class = "forms" placeholder="e-mail" ;value="e-mail" type = "email" onfocus="this.placeholder=''" onblur="this.placeholder='e-mail'">
+						<input class = "form" placeholder="e-mail" value="e-mail" type = "email" onfocus="this.placeholder=''" onblur="this.placeholder='e-mail'">
 					</div>
 					<div class="box">
 						Birthday:
 						<br>
-						<input class ="forms"; type="date";>
+						<input class ="form" type="date">
 					</div>
 				</div>
-				<div class="middle1 col-4 col-m-6">
+				<div class="middle1 col-3 col-m-6">
 					<div class="box">
 						Language
 						<br>
@@ -61,10 +63,10 @@
 					<div class="box">
 						Select a file:
 						<br>
-						<input id="selectfile" type="file"  name="img">
+						<input id="selectfile" type="file" name="img">
 					</div>
 					<div class="box">
-						<img id="userPhoto" src="user-image.png" >				
+						<img id="userPhoto" src="user-image.png" alt="UserPhoto" >
 					</div>
 				</div>
 			</form>
@@ -72,24 +74,24 @@
 		<div style = "clear:both;"></div>
 		<div class="middle  col-12 col-m-12">
 			<header>
-				<div class="col-5 col-m-12">
+				<div class="col-3 col-m-12">
 					<div class="title">
 						BILLING INFORMATION
 					</div>
 				</div>
 			</header>
 		<form action="/action_page.php">
-			<div class="middle1 col-7 col-m-12">
+			<div class="middle1 col-7 col-m-12" style="margin-top:20px;">
 					<div class="box">
 						Adress:
 						<br>
-						<input class ="forms"; onfocus="this.placeholder=''" value="Calle Madrid ..." onblur="this.placeholder='Calle Madrid ...' "; style ="height:40px; type:adress; ">
+						<input class ="form" onfocus="this.placeholder=''" value="Calle Madrid ..." onblur="this.placeholder='Calle Madrid ...' " style ="height:40px; type:adress; ">
 					</div>
-				
+
 				<div class="box">
 					Payment method:
 					<br>
-					<select style ="height:60px; width: 100%">
+					<select style ="height:60px; width:100%">
 						<option selected>credit card
 						<option>Paypal
 						<option>cash
@@ -98,32 +100,31 @@
 				<div class="box">
 					Number
 					<br>
-					<input class ="forms"; size="16"; onfocus="this.placeholder=''" onblur="this.placeholder='1111 1111 1111 1111'" ; value="1111 1111 1111 1111" style ="type:number; ">
+					<input class ="form" size="16" onfocus="this.placeholder=''" onblur="this.placeholder='1111 1111 1111 1111'" value="1111 1111 1111 1111" style ="type:number; ">
 				</div>
 				<div style="clear:both;"></div>
 				<div class="box">
 					Valid
 					<br>
-					<input class ="forms"; style ="type:number; maxlength:2; width:40px; margin-right: 1px;"> /
+					<input class ="form" style ="type:number; maxlength:2; width:40px; margin-right: 1px;"> /
 				</div>
-				<div class="box">
+				<div class="box" style="float:left;">
 					Thru
 					<br>
-					<input class ="forms"; style ="type:number; maxlength:2; width:40px;">
+					<input class ="form" style ="type:number; maxlength:2; width:40px;">
 				</div>
 				<div style="clear:both;"></div>
 			</div>
 			</form>
 		</div>
 		<div style = "clear:both;"></div>
-</main>
-<footer>
+
 	<div class="footer col-12 col-m-12">
 		<div class="footerLink col-4 col-m-4"><a href="https://www.w3schools.com/html/html_links.asp" target="_blank">link 1</a></div>
 		<div class="footerLink col-4 col-m-4"><a href="https://www.w3schools.com/html/html_links.asp" target="_blank">link 2</a></div>
 		<div class="footerLink col-4 col-m-4"><a href="https://www.w3schools.com/html/html_links.asp" target="_blank">link 3</a></div>
 	</div>
 
-</footer>
+</div>
 </body>
 </html>
