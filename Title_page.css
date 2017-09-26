@@ -1,0 +1,22 @@
+.middle1
+{
+	display: inline-block;
+	float: left;
+}
+
+#selectfile
+{
+	font-size: 15px;
+	width:104px;
+}
+
+#profPicture
+{
+	width: 100px;
+	float: left;
+}
+.box{
+	padding: 5px;
+	//text-align: top;
+	width: 100%;
+}
