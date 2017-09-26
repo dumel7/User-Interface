@@ -2,106 +2,128 @@
 <html>
 <head>
 <title>First excercise</title>
-<link rel="stylesheet" href="styles.css" type="text/css"/>
+<link rel="stylesheet" href="Main_styles.css" type="text/css"/>
+<link rel="stylesheet" href="Title_page.css" type="text/css"/>
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 
 <body style=" font-family: 'Lato', sans-serif;">
 
 <div class = "container">
-	<div class="header">
-		<div id = "logo"> <img src = "logo.png" width="100px"; height="100px"; style="float:left" > </div>
-			<div id = "account">My account</div>
-			<div class = "link"> <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">link 1</a> </div>
-			<div class = "link"> <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">link 2</a> </div>
-			<div class = "link"; style="border-right:none;";> <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">link 3</a> </div>
-			<div style = "clear:both;"></div>
-	</div>
+<header>
 
-	<div class="middle">
-
-		<div class="m1">
-				PERSONAL INFORMATION
+		<div class="header">
+			<div id = "mainLogo"> <img id="main_logo" src = "img/netflix-logo.png" > 
+				<div id = "pageTitle">My account</div>
 			</div>
 
-		<div class="m1" >
-			<form action="/action_page.php">
-				First and last name:<br>
-				<input class ="forms"; style ="type:text; ">
-				<br><br>
-				Birthtday:<br>
-				<input class ="forms"; type="date";>
-				<br><br>
-					Select a file: <br><input id="selectfile" type="file"  name="img">
-				<br><br>
-			</form>
+				<div class = "link col-2 col-m-12"> <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">link 1</a> </div>
+				<div class = "link col-2 col-m-12"> <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">link 2</a> </div>
+				<div class = "link col-2 col-m-12"; style="border-right:none;";> <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">link 3</a> </div>
 		</div>
-
-		<div class="m1">
-			<form action="/action_page.php">
-					E-mail: <br>
-					<input class = "forms" ;type = "email">
-					<br><br>
-					Language<br>
-					<select>
-						<option selected>English
-						<option>Polish
-						<option>Spanish
-					</select>
-			</form>
-		</div>
-			<div style = "clear:both;"></div>
-	</div>
-
-		<div class="middle" style="	background-color: #67bcfb;">
-			<div class=m1>
-				BILLING INFORMATION
-			</div>
-
-			<div class=m1 ;styles="width: 640px;">
-				<div id=m1up>
-					<form action="/action_page.php">
-						Adress:<br>
-						<input class ="forms"; value ="Calle Madrid" ; style ="type:adress; ">
-						<br><br>
-						Payment methods<br>
-						<select>
-							<option selected>credit card
-							<option>Paypal
-							<option>cash
-						</select>
-
-						<div id=m1down>
-							<div class="m1"; styles="width: 100px;">
-								Number<br>
-								<input class ="forms"; size="16"; value ="1111 1111 1111 1111" ;  style ="type:number; ">
-							</div>
-							<div class="m1"; styles="width: 100px;">
-
-								<input class ="forms"; style ="type:number; maxlength:16 ">
-							</div>
-							<div class="m1"; styles="width: 100px;">
-
-							</div>
-							<div class="m1"; styles="width: 100px;">
-
-							</div>
-						</div>
-					</form>
-
+		<div style="clear:both"></div>
+</header>
+<main>
+		<div class="middle  col-12 col-m-12">
+			<header>
+				<div class="col-4 col-m-12">
+					<div class="title">
+						PERSONAL INFORMATION
+					</div>
 				</div>
-
-			</div>
+			</header>
+			<form action="/action_page.php">
+				<div class="middle1 col-4 col-m-6">
+					<div class="box">
+						<input class ="forms"; placeholder="First and last name" ;style ="type:text; " onfocus="this.placeholder=''" onblur="this.placeholder='First and last name'">
+					</div>
+					<div class="box">
+						<input class = "forms" placeholder="e-mail" ;value="e-mail" type = "email" onfocus="this.placeholder=''" onblur="this.placeholder='e-mail'">
+					</div>
+					<div class="box">
+						Birthday:
+						<br>
+						<input class ="forms"; type="date";>
+					</div>
+				</div>
+				<div class="middle1 col-4 col-m-6">
+					<div class="box">
+						Language
+						<br>
+						<select>
+							<option selected>English
+							<option>Polish
+							<option>Spanish
+						</select>
+					</div>
+					<div class="box">
+						Select a file:
+						<br>
+						<input id="selectfile" type="file"  name="img">
+					</div>
+					<div class="box">
+						<img id="userPhoto" src="user-image.png" >				
+					</div>
+				</div>
+			</form>
 		</div>
 		<div style = "clear:both;"></div>
-
-		<div class="footer">
-			<div class=link><a href="https://www.w3schools.com/html/html_links.asp" target="_blank">link 1</a></div>
-			<div class=link><a href="https://www.w3schools.com/html/html_links.asp" target="_blank">link 1</a></div>
-			<div class=link><a href="https://www.w3schools.com/html/html_links.asp" target="_blank">link 1</a></div>
-		</div>
+		<div class="middle  col-12 col-m-12">
+			<header>
+				<div class="col-5 col-m-12">
+					<div class="title">
+						BILLING INFORMATION
+					</div>
+				</div>
+			</header>
+		<form action="/action_page.php">
+			<div class="middle1 col-7 col-m-12">
+					<div class="box">
+						Adress:
+						<br>
+						<input class ="forms"; onfocus="this.placeholder=''" value="Calle Madrid ..." onblur="this.placeholder='Calle Madrid ...' "; style ="height:40px; type:adress; ">
+					</div>
+				
+				<div class="box">
+					Payment method:
+					<br>
+					<select style ="height:60px; width: 100%">
+						<option selected>credit card
+						<option>Paypal
+						<option>cash
+					</select>
+				</div>
+				<div class="box">
+					Number
+					<br>
+					<input class ="forms"; size="16"; onfocus="this.placeholder=''" onblur="this.placeholder='1111 1111 1111 1111'" ; value="1111 1111 1111 1111" style ="type:number; ">
+				</div>
+				<div style="clear:both;"></div>
+				<div class="box">
+					Valid
+					<br>
+					<input class ="forms"; style ="type:number; maxlength:2; width:40px; margin-right: 1px;"> /
+				</div>
+				<div class="box">
+					Thru
+					<br>
+					<input class ="forms"; style ="type:number; maxlength:2; width:40px;">
+				</div>
+				<div style="clear:both;"></div>
 			</div>
+			</form>
+		</div>
+		<div style = "clear:both;"></div>
+</main>
+<footer>
+	<div class="footer col-12 col-m-12">
+		<div class="footerLink col-4 col-m-4"><a href="https://www.w3schools.com/html/html_links.asp" target="_blank">link 1</a></div>
+		<div class="footerLink col-4 col-m-4"><a href="https://www.w3schools.com/html/html_links.asp" target="_blank">link 2</a></div>
+		<div class="footerLink col-4 col-m-4"><a href="https://www.w3schools.com/html/html_links.asp" target="_blank">link 3</a></div>
+	</div>
 
+</footer>
 </body>
 </html>
